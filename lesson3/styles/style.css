@@ -14,7 +14,7 @@
     --footer-notes: 'Roboto Mono', monospace;
   
     /* alternative colors*/
-    --headline-color-on-white: black;  /* headlines on a white background */ 
+    --headline-color-on-white: radial-gradient(circle, rgba(34,169,196,1) 0%, rgba(9,114,121,1) 50%, rgba(2,0,36,1) 100%);;  /* headlines on a white background */ 
     --headline-color-on-color: white; /* headlines on a colored background */ 
     --paragraph-color-on-white: black; /* paragraph text on a white background */ 
     --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
