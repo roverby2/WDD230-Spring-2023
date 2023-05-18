@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Roboto+Mono&family=Roboto:wght@500&display=swap');
+
+:root {
+    
+    /* colors */
+    --primary: #0084A1;
+    --secondary: #FFFFFF;
+    --accent1: #09B8AB;
+    --accent2: #299218;
+    /*Font Colors*/
+    --heading-font: 'lexend', sans-serif;
+    --subttitle-font: 'lexend', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    --footer-notes: 'Roboto Mono', monospace;
+  
+    /* alternative colors*/
+    --headline-color-on-white: black;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background */ 
+    --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #215CAD;
+    --nav-link-color: #FDFDFD;
+    --nav-background-color: white;
+    --nav-hover-link-color: black;
+    --nav-hover-background-color: white;
+    /*Background colors*/
+    --background-color-title: black;
+    --background-color-page:white;
+    /*Font size*/
+    --headline: 2.8rem;
+    --subtitle: 1.8rem;
+    --paragraph: 1.2rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color-page);
+    color: #000;
+    font-family: var(--paragraph-font);
+}
+
+header {
+    background-color: var(--background-color-title);
+    border-radius: 10px;
+    color: var(--headline-color-on-color);
+    margin: 15px;
+    padding: 30px;
+    font-family: var(--heading-font);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1 {
+    text-align: center;
+    color: var(--headline-color-on-color);
+    font-size: var(--headline);
+    margin: 30px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a:hover {
+	background-color: var(--nav-hover-background-color);
+	color: var(--nav-hover-link-color);
+    border-radius: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: var(--nav-link-color);
+    padding: 20px;
+    margin: 50px;
+    text-decoration: none;
+}
+
+main {
+    margin: 15px;
+    align-items: center;
+    /*overflow: hidden;*/
+}
+
+main h3, p {
+    margin: 40px; 
+    font-size: var(--paragraph); 
+} 
+
+main img {
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+main h2 {
+    background-color: var(--background-color-title);
+    border-radius: 10px;
+    padding: 15px;
+    color: var(--headline-color-on-color);
+    font-family: var(--subttitle-font);
+    font-size: var(--subtitle);
+    text-align: center;
+}
+
+hr {
+    margin: 15px;
+}
+
+footer {
+    background-color: var(--background-color-title);
+    border-radius: 10px;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+footer p{
+    font-family: var(--footer-notes);
+    margin: 10px;
+    padding: 3px;
+}
+
+.personas h3 {
+    font-size: 1.5em;
+    margin-bottom: -30px;
+}
+
+.heading {
+    font-family: var(--headline);
+}
+
+.paragraph {
+    font-family: var(--paragraph);
+}
+
+.footer {
+    font-family: var(--footer-notes);
+}
+
+.colors {
+    width: 90%;
+    margin: 30px auto;
+    
+    text-align: center;
+    color: var(--paragraph-color-on-color);
+    font-family: var(--subttitle-font);
+}
+
+.colors th {
+    background-color: var(--paragraph-color-on-white) ;
+    padding: 15px;
+}
+
+.colors td {
+    width: 25%;
+    padding: 15px;
+    color: var(--paragraph-color-on-white);
+}
+
+.primary {
+    background-color: var(--primary);
+}
+
+.secondary {
+    background-color: var(--secondary);
+}
+
+.accent1 {
+    background-color: var(--accent1);
+}
+
+.accent2 {
+    background-color: var(--accent2);
+}
+
+/*Small Screen*/
+@media screen and (max-width: 700px)
+{ 
+  
+    header h1 {
+        font-size: 1.em;
+        margin: auto;
+    }
+
+    main h2 {
+        padding: 15px;
+        font-size: 1.4em;
+    
+    }
+
+    nav ul {
+        margin: 15px;
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 3px;
+        font-size: 15px;   
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    .colors {
+        font-size: 15px; 
+    }
+
+    .colors th {
+        padding: 10px;
+    }
+    
+    .colors td {
+        padding: 10px;
+    }
+
+}

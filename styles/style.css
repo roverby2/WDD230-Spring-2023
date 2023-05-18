@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Roboto+Mono&family=Roboto:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px auto;
+    max-width: 900px;
+}
+
+header {
+    background: rgb(34,169,196);
+    background: radial-gradient(circle, rgba(34,169,196,1) 0%, rgba(9,114,121,1) 50%, rgba(2,0,36,1) 100%);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 30px;
+    font-family: 'Lexend', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header img {
+    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+    margin: auto;
+}
+
+main {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,114,121,1) 43%, rgba(34,169,196,1) 100%);
+    display: grid;
+    grid-gap: 15px;
+    margin: 15px;
+    align-items: center;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+    
+
+}
+
+h2 {
+    background: transparent;
+    border-radius: 10px;
+    padding: 40px;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+li {
+    padding-bottom: 30px;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color:white;
+    
+}
+
+li :hover {
+    color: limegreen;
+    text-decoration: underline;
+}
+
+.ulist {
+    margin: 30px auto;
+    font-size: 1.5em;
+}
+
+footer {
+    background: rgb(34,169,196);
+    background: radial-gradient(circle, rgba(34,169,196,1) 0%, rgba(9,114,121,1) 50%, rgba(2,0,36,1) 100%);
+    border-radius: 10px;
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+footer p{
+    font-family: 'Roboto Mono', monospace;
+    margin: 10px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 700px)
+{
+
+    header {
+        background-color: black;
+        flex-direction: column;
+    }
+    
+    h1 {
+        color: white;
+        font-size: 2em;
+        margin: auto;
+    }
+
+    header img {
+        margin: auto;
+        width: 110px;
+        height: 110px;
+    }
+
+    h2 {
+        padding: 15px;
+        font-size: 1.5em;
+    
+    }
+
+    .ulist {
+        margin: 40px;
+        font-size: 1.2em;
+    }
+
+    footer {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+}

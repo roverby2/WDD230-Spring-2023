@@ -1,0 +1,9 @@
+/*Medium view*/
+@media only screen and (max-width: 1300px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    main section:nth-child(3) {
+        grid-column: span 2;
+    }
+}

@@ -1,0 +1,123 @@
+/*Medium view*/
+@media only screen and (max-width: 1100px) {
+
+    /***************************************
+    ************ Header section ************
+    ****************************************/
+    header {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .hmbrgr-menu {
+        margin: auto;
+    }
+
+    #hmbrgr-bttn {
+        float: right;
+        display: block;
+    }
+    button {
+        background-color: transparent;
+        border-radius: 5px;
+        color: var(--primary);
+        font-size: 4rem;
+        border: 0;
+    }
+
+    button:hover {
+        transition: 0.5s;
+        background-color: var(--accent1);
+        color: var(--secondary);
+    }
+    
+    .mainNav li {
+        display: none;
+    }
+
+    .responsive li {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+      
+    }
+
+    .responsive {
+        display: block;
+    }
+  
+    /***************************************
+    ***************** Main *****************
+    ****************************************/
+
+    main {
+        display: grid;
+        gap: 10px;
+        margin: 1rem;
+        grid-template-columns: 70% 30%;
+    }
+
+    main section:nth-child(1) {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        
+    }
+    
+    main section:nth-child(2) {
+        grid-column: 1 / 1;
+        grid-row: 5 / span 1;
+        
+    }
+
+    main section:nth-child(3) {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+        
+    }
+
+    main section:nth-child(4) {
+        grid-column: 2;
+        grid-row: 5;
+    }
+    
+    main section:nth-child(5){
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+    main section:nth-child(6){
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    main section {
+        grid-column: 1 / span 2;
+    }
+    
+    .spotlight {
+        flex-flow: row;  
+    }
+
+    .spotlight h2:nth-child(3){
+        display: none;
+    }
+    
+    .spotlight h2 {
+        width: 100%;
+
+        margin: 3px;
+    }
+    
+    main section {
+        grid-column: 1 / span 2;
+    }
+    
+    /***************************************
+    **************** Footer ****************
+    ****************************************/
+    
+    .info_bottom h4 {
+        margin: 30px;
+
+    }
+
+}

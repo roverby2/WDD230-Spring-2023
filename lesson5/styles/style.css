@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Roboto+Mono&family=Roboto:wght@500&display=swap');
+
+:root {
+    
+    /* colors */
+    --primary: #0084A1;
+    --secondary: #FFFFFF;
+    --accent1: #09B8AB;
+    --accent2: #299218;
+    /*Font Colors*/
+    --heading-font: 'Roboto', sans-serif;
+    --subttitle-font: 'lexend', sans-serif;
+    --paragraph-font: 'lexend', sans-serif;
+    --footer-notes: 'Roboto Mono', monospace;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--subttitle-font);
+}
+
+h1 {
+	color: #FFFFFF;
+	background-color: black;
+	font-size: 1.1rem;
+	font-family: var(--heading-font);
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+main {
+	margin: 1rem auto;
+	border-radius: 10px;
+	padding: 1rem;
+	width: 225px;
+	color: #FFFFFF;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+}
+
+input,
+button {
+	padding: 0.6rem;
+	border-radius: 10px;
+}
+
+button {
+	margin: 0.5rem;
+}
+
+.delete {
+	width: fit-content;
+}
+
+.input {
+	display: flex;
+	gap: 1rem;
+}
+
+.list {
+	padding: 0.5rem;
+}
+
+ul {
+	margin: 1rem;
+	list-style: none;
+}
+
+li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer {
+	font-family: var(--footer-notes);
+	font-size: .7rem;	
+}
+
+@media only screen and (min-width: 32.5em) {
+	
+	h1 {
+		font-size: 2rem;
+	}
+
+	main {
+		width: 399px;
+	}
+
+	footer {
+		font-size: 1rem;	
+	}
+
+}
