@@ -3,9 +3,9 @@
 :root {
     
     /* colors */
-    --primary: #0084A1;
-    --secondary: #FFFFFF;
-    --accent1: #09B8AB;
+    --primary: #22a9c4;
+    --secondary: #020024;
+    --accent1: #097279;
     --accent2: #299218;
     /*Font Colors*/
     --heading-font: 'lexend', sans-serif;
@@ -22,7 +22,7 @@
     --nav-link-color: #FDFDFD;
     --nav-background-color: white;
     --nav-hover-link-color: black;
-    --nav-hover-background-color: white;
+    --nav-hover-background-color: limegreen;
     /*Background colors*/
     --background-color-title: black;
     --background-color-page:white;
@@ -45,6 +45,8 @@ body {
 }
 
 header {
+    background: rgb(34,169,196);
+    background: radial-gradient(circle, rgba(34,169,196,1) 0%, rgba(9,114,121,1) 50%, rgba(2,0,36,1) 100%);
     background-color: var(--background-color-title);
     border-radius: 10px;
     color: var(--headline-color-on-color);
@@ -108,6 +110,8 @@ main img {
 
 main h2 {
     background-color: var(--background-color-title);
+    background: rgb(34,169,196);
+    background: radial-gradient(circle, rgba(34,169,196,1) 0%, rgba(9,114,121,1) 50%, rgba(2,0,36,1) 100%);
     border-radius: 10px;
     padding: 15px;
     color: var(--headline-color-on-color);
@@ -122,6 +126,8 @@ hr {
 
 footer {
     background-color: var(--background-color-title);
+    background: rgb(34,169,196);
+    background: radial-gradient(circle, rgba(34,169,196,1) 0%, rgba(9,114,121,1) 50%, rgba(2,0,36,1) 100%);
     border-radius: 10px;
     color: white;
     margin: 15px;
@@ -170,7 +176,7 @@ footer p{
 .colors td {
     width: 25%;
     padding: 15px;
-    color: var(--paragraph-color-on-white);
+    color: white;
 }
 
 .primary {
