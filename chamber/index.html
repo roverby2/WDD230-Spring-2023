@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home|Dallas Chamber of Commerce</title>
+    <meta name="description" content="the Dallas Chamber of Commerce provides local businesses with information and resources so that they can prosper and grow. The site includes historical information, current graphics, a directory of local businesses, a way to become a member, and contact information.">
+    <meta name="author" content="Ryan Overby">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <p class="banner_msg"></p>
+        </div>
+        <div class="top-header">
+            <div class="headerLogo">
+                <a href="index.html"> 
+                    <img src="images/dallaslogo.png" alt="Dallas Chamber of Commerce Logo">
+                </a>
+                <h1>Dallas<br>Chamber of<br>Commerce</h1>
+            </div>
+            <div class="hmbrgr">
+                <!--<button id="hmbrgr-bttn">&#9776;</button>-->
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="index.html" class="navLink">Home</a></li>
+                    <li><a href="#" class="navLink">Discover</a></li>
+                    <li><a href="#" class="navLink">Directory</a></li>
+                    <li><a href="#" class="navLink">Join</a></li>
+                    <li><a href="#" class="navLink">Contact</a></li>  
+                </ul>
+            </nav>
+        </div>
+        <p><span id="date"></span></p>
+    </header>
+
+    <main>
+        <!--1-->
+        <section class="welcome">
+            <h2>Welcome to Dallas</h2>
+            <picture class="welcome-image">
+                <source srcset="#" media="(max-width: 714px)">
+                <source srcset="#" media="(max-width: 1100px)">
+                <img src="images/dallasskyline.png" alt="Dallas Skyline">
+            </picture>
+            <button class="welcome-bttn"><a href="join.html">Join Us</a></button>
+        </section>
+        <!--2-->
+        <section class="event">
+            <h2>Grand Opening</h2>
+            <h3>The Crown Block</h3>
+            <p>Join us for the grand opening of The Crown Block, Thursday at 3:00 pm more info...</p>
+        </section>
+        <!--3-->
+        <section class="join">
+            <p>Learn more about joining the Chamber of Commerce and how it can benefit your business.</p>
+            <!--Causing problems using HTML inside the button and might be hard for screen readers/don't know what to do besides using a eventlistener in JS-->
+            <button class="join-bttn"><a href="#">Join Us</a></button>
+        </section>
+        <!--4-->
+        <section class="weather">
+            <h2>Weather</h2>
+                <div id="current-temp"></div>
+                <img id="weather-icon" src="#" alt="Weather Icon">
+                <div id="weather-caption"></div>
+                <div id="wind-speed"></div>
+                <div id="wind-chill"></div>
+        </section>
+        <!--5-->
+        <section class="newRelease">
+            <h2>News Release</h2>
+            <p>
+                <!--  -->
+                Dallas is currently witnessing a remarkable surge in its commercial sector, with local businesses reaping the rewards of the region's thriving economy. Fueled by a dynamic tech industry, substantial investments in infrastructure, and a wide range of retail and service sectors, this Lone Star State city is solidifying its position as a center for innovation and business ventures. Consequently, job prospects and revenue streams are thriving, forming a robust basis for the ongoing expansion and prosperity of Dallas' commercial landscape.
+            </p>
+        </section>
+        <!--6-->
+        <section class="spotlight">
+            <div class="spotlight-1">
+                <h2>Chop House Gyro</h2>
+                <h3>Halal Grill Always Fresh</h3>
+                <a href="https://www.chophousegyro.com"><img src="images/choplogo.png" alt="Chop House Gyro"></a>
+
+                <p>kausik@chophousegyro.com</p>
+                <p>(214)954-7494</p> 
+                <p>www.chophousegyro.com</p> 
+            </div>
+            <div class="spotlight-2">
+                <h2>Spotlight 2</h2>
+                <h3>Slogan thing</h3>
+                <a href="#"><img src="#" alt="Spotlight 2"></a>
+
+                <p>Email</p>
+                <p>Phone Number</p> 
+                <p>Website</p>
+            </div>
+            <div class="spotlight-3">
+                <h2>Spotlight 3</h2>
+                <h3>Slogan thing</h3>
+                <a href="#"><img src="images/pss.webp" alt="Spotlight 3"></a>
+                <p>Email</p>
+                <p>Phone Number</p> 
+                <p>Website</p>
+            </div> 
+        </section>
+    </main>
+    <footer>
+        <a href="index.html"> 
+            <img src="images/dallaslogo.png" alt="Dallas Chamber of Commerce" class="logo">
+        </a>
+        <section>
+            <h3>Dallas<br>Chamber of<br>Commerce</h3>
+            <p>5710 Lyndon B Johnson Fwy #100</p> 
+        </section>
+        <section>        
+            <p>info@dallascofc.org</p>
+            <p>(469)923-2100</p>
+            <p>location<a href="https://maps.google.com" target="_blank">📍</a></p>
+
+        </section>
+        <section class="soc_media">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook.png" alt="facebook"></a>
+            <a href="https://www.linkedin.com/">
+                <img src="images/Linkedin.png" alt="linkedin"></a>
+        </section>
+        <section class="info_bottom">
+            <h4><span id="copyright"></span> Dallas Chamber of Commerce | Ryan Overby | Brigham Young University-Idaho | <span id="lastModDate"></span></h4>
+        </section>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
