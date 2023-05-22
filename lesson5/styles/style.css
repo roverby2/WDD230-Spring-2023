@@ -30,7 +30,8 @@ body {
 
 h1 {
 	color: #FFFFFF;
-	background-color: black;
+    background: rgb(34,169,196);
+    background: radial-gradient(circle, rgba(34,169,196,1) 0%, rgba(9,114,121,1) 50%, rgba(2,0,36,1) 100%);
 	font-size: 1.1rem;
 	font-family: var(--heading-font);
 	border-radius: 10px;
@@ -43,7 +44,8 @@ main {
 	padding: 1rem;
 	width: 225px;
 	color: #FFFFFF;
-	background-color: black;
+    background: rgb(34,169,196);
+    background: radial-gradient(circle, rgba(34,169,196,1) 0%, rgba(9,114,121,1) 50%, rgba(2,0,36,1) 100%);
 	display: flex;
 	flex-direction: column;
 }
