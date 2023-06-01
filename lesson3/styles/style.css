@@ -148,11 +148,11 @@ footer p{
 }
 
 .heading {
-    font-family: var(--headline);
+    font-size: var(--headline);
 }
 
 .paragraph {
-    font-family: var(--paragraph);
+    font-size: var(--paragraph);
 }
 
 .footer {
@@ -200,7 +200,7 @@ footer p{
 { 
   
     header h1 {
-        font-size: 1.em;
+        font-size: 1em;
         margin: auto;
     }
 
