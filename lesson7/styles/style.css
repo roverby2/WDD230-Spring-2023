@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Roboto+Mono&family=Roboto:wght@500&display=swap');
+
+
+img {
+    display: block;
+    margin-top: 2rem;
+    filter: blur(0em);
+    transition: filter 1s;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+img[data-src] {
+  filter: blur(0.2em);
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
