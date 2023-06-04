@@ -1,0 +1,146 @@
+/*Small view*/
+@media only screen and (max-width: 714px){
+
+
+    /***************************************
+    ************ Header section ************
+    ****************************************/
+    
+    .headerLogo img {
+        max-width: 110px;
+        max-height: 110px;
+    }
+
+    .headerLogo h1 {
+        font-size: 20px;
+    }
+
+    .mainNav {
+        top: 200px;
+    }
+
+    /***************************************
+    ***************** Main *****************
+    ****************************************/
+
+    main {
+        padding: 5px;
+        margin: 10px;
+        display: flex;
+        flex-flow: column;
+    }
+
+    main section {
+        height: auto;
+    }
+    
+    main h2{
+        color: var(--main-color);
+        font-size: 20px;
+    }
+
+    .welcome h2 {
+        left: 20%;
+        right: 20%;
+        font-size: 20px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .welcome button {
+        left: 20%;
+        right: 20%;
+        transition: .8s;
+        font-size: 1em;
+    }
+
+    .spotlight {
+        flex-direction: column;
+    }
+
+    .spotlight div {
+        border: solid 1px gray;
+    }
+    
+    main .join{
+        display: none;
+    }
+
+    /***************************************
+    **************** Footer ****************
+    ****************************************/
+
+    footer{
+        display: flex;
+        text-align: center;
+        background-color: var(--main-color);
+        flex-flow: column;
+    }
+
+    .logo {
+        max-width: 120px;
+        max-height: 120px;
+        margin: 0px;
+    }
+
+    footer h3 {
+        font-size: 16px;
+    }
+    
+    footer section p {
+        font-size: 12px;
+    }
+
+    .soc_media img {
+        max-width: 50px;
+        max-height: 50px;
+        align-items: center;
+    }
+
+    .info_bottom {
+        border-top: 1px solid white;
+        margin-top: 0;
+        font-size: 12px;
+    }
+
+    /***************************************
+    ************** Discover ****************
+    ****************************************/
+
+    .discover {
+        margin: 15px;
+    }
+
+    .info-box {
+        margin: 50px;
+    }
+    
+    .imageFrame h2 {
+        font-size: 2em;
+    }
+    
+    .info-box h3 {
+        font-size: 1.8em;
+        padding: 5px;
+    }
+    
+    .imageFrame p {
+        font-size: 1em;
+        padding: 10px;
+    }
+    
+
+
+
+      
+
+
+
+
+
+    /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+    html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+    /*----------- apply a natural box layout model to all elements --------------*/
+    * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+}
