@@ -56,7 +56,7 @@ header {
 
 .banner_msg {
     text-align: center;
-    background-color: var(--primary);
+    background-color: blue;
     color: var(--headline-color-on-color);
     padding: 10px;
     margin: 0;
@@ -100,14 +100,14 @@ header {
 
 .mainNav ul li a {
     display: block;
-    color: var(--nav-link-color);
+    color: blue;
     font-size: 25px;
     padding: 0 30px;
 }
 
 .mainNav ul li a:hover {
     font-size: 30px;
-    color: var(--nav-hover-link-color);
+    color: blue;
 }
 
 nav ul li {
@@ -157,7 +157,7 @@ main {
     position: absolute;
     font-size: 2.5em;
     left: 1.8em;
-    background-color: var(--primary);
+    background-color: blue;
     border-radius: 10px;
     padding: 10px;
     z-index: 2;
@@ -171,7 +171,7 @@ main {
 }
 
 main section {
-    background-color: #0084A1;
+    background-color: blue;
     color: #FFFFFF;
     padding: 10px;
     box-shadow: 0 1px 5px 0 gray;
@@ -259,8 +259,8 @@ main p {
     border-radius: 5px;
     font-size: 1.2rem;
     padding: 10px;
-    color: var(--headline-color-on-color);
-    background-color: var(--accent2);
+    color:red;
+    background-color: red;
     text-decoration: none;
     border: 0;
 }
@@ -271,7 +271,7 @@ main p {
 
 .welcome-bttn:hover, .join-bttn:hover {
     transition: 0.5s;
-    background-color: var(--accent1);
+    background-color: lightcoral;
     cursor: pointer;
 }
 
@@ -425,7 +425,7 @@ footer section img {
 .imageFrame h2 {
     position:relative;
     font-size: 2.5em;
-    background-color: var(--primary);
+    background-color: red;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
@@ -441,4 +441,132 @@ footer section img {
     text-align: center;
     font-size: 1.8em;
     padding: 20px;
+}
+
+/***************************************
+************** Join  *******************
+****************************************/
+.join-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.join-grid h2, .join-grid div {
+    text-align: center;
+    padding: 10px;
+}
+
+.join-grid input,
+.join-grid textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.join-grid button {
+    background-color: red;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.join-grid button:hover {
+    background-color: blue;
+    transition: .5s ease-in-out;
+}
+
+.join-grid form {
+  display: grid;
+  grid-gap: 1em;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+form {
+  margin: 0 auto;
+  padding: 2em;
+  border: 1px solid #ccc;
+  background-color: blue;
+  border-radius: 1em;
+  color: #FFFFFF;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Style for the first row */
+tr:nth-child(1) td {
+  background-color: blue;
+  color: white;
+  font-size: 28px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Style for the second row */
+tr:nth-child(2) td {
+  background-color: red;
+  color: white;
+}
+
+/* Alternate row styling */
+tr:nth-child(odd):not(:first-child) {
+  background-color: #f3f3f3;
+}
+
+/* Styling for cells starting from the third row */
+tr:nth-child(n+3) td:nth-child(n+1) {
+  color: black;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  td, th {
+    display: block;
+  }
+
+  th {
+    text-align: center;
+  }
+
+  td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  td {
+    clear: both;
+    padding-left: 50%;
+  }
+}
+
+.thankyou {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 300px 0;
 }

@@ -129,7 +129,28 @@
         padding: 10px;
     }
     
-
+    /***************************************
+    *************** Join Us ****************
+    ****************************************/
+    td, th {
+        display: block;
+    }
+    
+    th {
+        text-align: center;
+    }
+    
+    td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    td {
+        clear: both;
+        padding-left: 50%;
+    }
 
 
       
