@@ -3,10 +3,10 @@
 :root {
     
     /* colors */
-    --primary: #22a9c4;
-    --secondary: #020024;
-    --accent1: #097279;
-    --accent2: #299218;
+    --primary: #00ABE4;
+    --secondary: #F40009;
+    --accent1: #FFFFFF;
+    --accent2: #FF4433;
     /*Font Colors*/
     --heading-font: 'lexend', sans-serif;
     --subttitle-font: 'lexend', sans-serif;
@@ -176,7 +176,7 @@ footer p{
 .colors td {
     width: 25%;
     padding: 15px;
-    color: white;
+    color: black;
 }
 
 .primary {
