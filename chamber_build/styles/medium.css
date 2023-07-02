@@ -1,50 +1,79 @@
 /*Medium view*/
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1150px) {
 
     /***************************************
     ************ Header section ************
     ****************************************/
-    header {
-        grid-template-columns: 1fr 2fr 1fr;
-    }
-
-    .hmbrgr-menu {
-        margin: auto;
-    }
-
-    #hmbrgr-bttn {
-        float: right;
+    .hmbrgr {
         display: block;
-    }
-    button {
-        background-color: transparent;
-        border-radius: 5px;
-        color: var(--primary);
-        font-size: 4rem;
-        border: 0;
-    }
-
-    button:hover {
-        transition: 0.5s;
-        background-color: var(--accent1);
-        color: var(--secondary);
+        cursor: pointer;
+        padding: 0 50px;
     }
     
-    .mainNav li {
-        display: none;
+    .line {
+        width: 40px;
+        height: 8px;
+        background: var(--primary);
+        margin: 6px 0;
+        border-radius: 3px;
+        padding: 0;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    .hmbrgr:hover .line {
+        transition: all 0.4s ease-in-out;
+        background-color: var(--accent1);
+    }
+    
+    .mainNav {
+        position: absolute;
+        top: 242px;
+        left: 0;
+        right: 0;
+        height: 0;
+        width: 100%;
+        background: var(--secondary);
+        z-index: +1;
+        overflow: hidden;
+        opacity: 0;
+
     }
 
-    .responsive li {
-        display: flex;
-        align-self: center;
-        justify-content: center;
-      
-    }
-
-    .responsive {
+    .mainNav ul {
         display: block;
+        width: fit-content;
+        margin: 0 auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        padding: 30px 0;
+
     }
-  
+
+    .mainNav ul li a {
+        padding-bottom: 25px;
+    }
+    /*Part of the toggle menu*/
+    .mainNav.responsive {
+        opacity: 1;
+        transition: 0.3s;
+        height: auto;
+        z-index: 3;
+    }
+
+    .hmbrgr.responsive .line:nth-child(2)  {
+        transition: 0.4s;
+        opacity: 0;
+    }
+
+    .hmbrgr.responsive .line:nth-child(3)  {
+        transition: 0.4s;
+        transform: translateY(-14px) rotate(-45deg);
+    }
+    .hmbrgr.responsive .line:nth-child(1)  {
+        transition: 0.4s;
+        transform: translateY(14px) rotate(45deg);
+    }
+
     /***************************************
     ***************** Main *****************
     ****************************************/
@@ -53,7 +82,7 @@
         display: grid;
         gap: 10px;
         margin: 1rem;
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 2fr 1fr;
     }
 
     main section:nth-child(1) {
@@ -94,17 +123,19 @@
     }
     
     .spotlight {
+        display: flex;
         flex-flow: row;  
     }
-
-    .spotlight h2:nth-child(3){
-        display: none;
-    }
     
-    .spotlight h2 {
-        width: 100%;
-
+    .spotlight div {
+        display: flex;
+        width: auto;
         margin: 3px;
+        align-items: center;
+    }
+
+    .spotlight div:nth-child(3){
+        display: none;
     }
     
     main section {
@@ -119,5 +150,64 @@
         margin: 30px;
 
     }
+    footer h3 {
+        font-size: 15px;
+        font-family: var(--heading-font);
+    }
+    
+    footer a img {
+        padding: 10px;
+        max-width: 80px;
+        max-height: 80px;
+    
+    }
+    
+    footer p {
+        font-size: 15px;
+        font-family: var(--footer-notes);
+    }
+
+    /***************************************
+    **************** contact ****************
+    ****************************************/
+
+    .contact form {
+        width: 100%;
+    }
+    /***************************************
+    **************** Discover **************
+    ****************************************/
+    .demo-info {
+        flex-direction: column;
+    }
+    /***************************************
+    **************** Directory ****************
+    ****************************************/
+    .directory {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10%;
+    }
+
+    .boxInfo img{
+        display: block;
+        border-radius: 5px;
+        width: 90%;
+        height: 90%;
+        margin: auto;
+    }
+
+    .boxInfo h2 {
+        font-size: 2.5em;
+        padding: 10px;
+    }
+
+    .boxInfo p {
+        font-size: 1em;
+    }
+
+    /***************************************
+    **************** Join ******************
+    ****************************************/
 
 }

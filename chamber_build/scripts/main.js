@@ -1,9 +1,9 @@
-const currentYear = new Date().getFullYear();
 /* copy right */
 const copyright = document.querySelector('#copyright')
-copyright.textContent = `©️ ${currentYear}`;
 
 /* Last Update */
+const currentYear = new Date().getFullYear();
+copyright.textContent = `©️ ${currentYear}`;
 const lastModDate = document.querySelector('#lastModDate')
 const lastMod = new Date(document.lastModified);
 lastModDate.textContent = `Last Updated: ${lastMod.toLocaleDateString("en-US")} ${lastMod.toLocaleTimeString()}`;
@@ -16,10 +16,24 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 datefield.innerHTML = `<em>${fulldate}</em>`;
 
 /* Menu */
-// Store the selected elements that we are going to use. 
-const mainnav = document.querySelector('.mainNav')
-const hambutton = document.querySelector('#hmbrgr-bttn');
+const mainNav = document.querySelector('.mainNav');
+const hambutton = document.querySelector('.hmbrgr');
 
-// Add a simple arrow function that listens for the <li> hamburger button click event.
-// When clicked, the <ul class="navigation">'s class list toggle'
-hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+hambutton.addEventListener('click', () => {
+	
+	mainNav.classList.toggle('responsive')
+	hambutton.classList.toggle('responsive')
+
+});
+
+document.querySelector('navLink')
+
+/* Join Weekday Banner */
+const dayOfWeek = now.getDay();
+const msg = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+
+if (dayOfWeek === 1|| dayOfWeek === 2) {
+	document.querySelector(".banner_msg").textContent = msg;
+} else{
+	document.querySelector(".banner").style.display = "none"
+}
