@@ -56,7 +56,7 @@ header {
 
 .banner_msg {
     text-align: center;
-    background-color: blue;
+    background-color: #00ABE4;
     color: var(--headline-color-on-color);
     padding: 10px;
     margin: 0;
@@ -100,14 +100,14 @@ header {
 
 .mainNav ul li a {
     display: block;
-    color: blue;
+    color: #00ABE4;
     font-size: 25px;
     padding: 0 30px;
 }
 
 .mainNav ul li a:hover {
     font-size: 30px;
-    color: blue;
+    color: #00ABE4;
 }
 
 nav ul li {
@@ -157,7 +157,7 @@ main {
     position: absolute;
     font-size: 2.5em;
     left: 1.8em;
-    background-color: blue;
+    background-color: #00ABE4;
     border-radius: 10px;
     padding: 10px;
     z-index: 2;
@@ -171,7 +171,7 @@ main {
 }
 
 main section {
-    background-color: blue;
+    background-color: #00ABE4;
     color: #FFFFFF;
     padding: 10px;
     box-shadow: 0 1px 5px 0 gray;
@@ -271,7 +271,7 @@ main p {
 
 .welcome-bttn:hover, .join-bttn:hover {
     transition: 0.5s;
-    background-color: lightcoral;
+    background-color: orangered;
     cursor: pointer;
 }
 
@@ -376,6 +376,45 @@ footer section img {
 }
 
 
+/***************************************
+**************** Directory ****************
+****************************************/
+.directory {
+    display: grid;
+    margin: 0 20%;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+}
+
+.directory h2 {
+    grid-column: 1/ span 2;
+    text-align: center;
+    justify-content: center;
+    color: #F40009;
+
+}
+
+.boxInfo {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.boxInfo img{
+    display: inline;
+    width: 90%;
+    height: 90%;
+}
+
+.boxInfo h2 {
+    font-size: 2.5em;
+}
+
+.boxInfo p {
+    font-size: 2.5em;
+}
 
 /***************************************
 ***************** Discover *****************
@@ -476,7 +515,7 @@ footer section img {
 }
 
 .join-grid button:hover {
-    background-color: blue;
+    background-color: #00ABE4;
     transition: .5s ease-in-out;
 }
 
@@ -492,7 +531,7 @@ form {
   margin: 0 auto;
   padding: 2em;
   border: 1px solid #ccc;
-  background-color: blue;
+  background-color: #00ABE4;
   border-radius: 1em;
   color: #FFFFFF;
 }
@@ -518,7 +557,7 @@ th {
 
 /* Style for the first row */
 tr:nth-child(1) td {
-  background-color: blue;
+  background-color: #00ABE4;
   color: white;
   font-size: 28px;
   border-top-left-radius: 15px;
@@ -569,4 +608,41 @@ tr:nth-child(n+3) td:nth-child(n+1) {
     flex-direction: column;
     text-align: center;
     margin: 300px 0;
+}
+
+/***************************************
+************** Contact ***************
+****************************************/
+
+.contact {
+    grid-column: 2/3;
+}
+
+.contact form {
+    display: grid;
+    grid-gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact h2, .contact div {
+    text-align: center;
+    padding: 10px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.contact button {
+    background-color: var(--accent2);
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }

@@ -176,3 +176,38 @@
     }
 
 }
+
+ /***************************************
+    **************** Directory ****************
+    ****************************************/
+    .directory {
+        display: flex;
+        flex-direction: column;
+        margin: 0 15%;
+    }
+
+    .boxInfo img{
+        display: block;
+        border-radius: 5px;
+        width: 30%;
+        height: 30%;
+        margin: auto;
+    }
+
+    .boxInfo h2 {
+        font-size: 4em;
+        padding: 10px;
+        color: #F40009;
+    }
+
+    .boxInfo p {
+        font-size: 2em;
+    }
+
+     /***************************************
+    **************** contact ****************
+    ****************************************/
+
+    .contact form {
+        width: 100%;
+    }
