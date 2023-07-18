@@ -36,9 +36,11 @@
     <main>
         <section class="banner">
             <div class="boxImg">
-                <source media="(max-width: 500px)" srcset="#">
-                <source media="(min-width: 1000px)" srcset="#">
-                <img src="images/produce.png" loading="lazy" alt="market">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/produce.png">
+                    <source media="(min-width: 1000px)" srcset="images/produce.png">
+                    <img src="images/produce.png" loading="lazy" alt="market">
+                </picture>
             </div>
             <div class="welcomeBox">
                 <h1>Welcome to Bountiful Foods</h1>
