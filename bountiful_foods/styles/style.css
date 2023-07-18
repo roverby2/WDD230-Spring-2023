@@ -377,9 +377,15 @@ legend {
     font-size: 16px;
 }
 
+
+.special-instructions {
+    width: 100%;
+}
+
 .inputBox textarea {
     resize: vertical;
 }
+
 
 /* Fruit Selection info */
 .fresh-form p {
