@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home|Bountiful Foods</title>
+    <meta name="description" content="Bountiful Foods, a compact enterprise rooted in Carlsbad, California, specializes in providing organic and locally grown foods. While our physical location is in Carlsbad, our food truck fleet extends our reach along the California coast, serving the area from Los Angeles to San Diego. We source fruits and produce directly from local farmers, while also incorporating a range of products from national and international suppliers..">
+    <meta name="author" content="Ryan Overby">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////ADygfQAaVh0APIJpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMzAAAAADMiIiQzAAADMhEREUMwAANCESIhEjAAM0ISIiISQwA0QhIiIhJDADRCESIhEkMANEIREREiQwA0QhEiIRJDADNCEiIiEkMAA0IRIiEUMAADNBEREUMwAAAzQiIkMwAAAAAzMzMAAAAAAAAAAAAAD//wAA+B8AAOAHAADAAwAAwAMAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAMADAADAAwAA4AcAAPgfAAD//wAA" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <div class="headerLogo">
+            <a href="index.html"> 
+                <img src="images/logo4.png" alt="Bountiful Foods Logo">
+            </a>
+        </div>
+        <div class="hmbrgr">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="mainNav">
+            <ul>
+                <li><a href="index.html" class="navLink">Home</a></li>
+                <li><a href="fresh.html" class="navLink">Fresh</a></li>
+                <li><a href="about.html" class="navLink">About Us</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="boxImg">
+                <source media="(max-width: 500px)" srcset="#">
+                <source media="(min-width: 1000px)" srcset="#">
+                <img src="images/produce.png" loading="lazy" alt="market">
+            </div>
+            <div class="welcomeBox">
+                <h1>Welcome to Bountiful Foods</h1>
+                <p>We offer an array of freshly picked, organic food items sourced from local farms, complemented by our exclusive assortment of specialty fruit-infused beverages.</p>
+            </div>
+		</section>
+		<section class="specialty-drinks">
+            <h2>Our Specialty Drinks</h2>
+            <div class="productBox">
+                <div class="product">
+                    <img src="images/blueberry_Smoothie.png" loading="lazy" alt="Drink">
+                    <p>Blueberry flavor</p>
+                    <button class="tryBttn">Try Now</button>
+                </div>
+                <div class="product">
+                    <img src="images/mango_Smoothie.png" loading="lazy" alt="Cherry Drink">
+                    <p>New cherry flavor</p>
+                    <button class="tryBttn">Try Now</button>
+                </div>
+                <div class="product">
+                    <img src="images/strawberry_Smoothie.png" loading="lazy" alt="Pineapple Drink">
+                    <p>New pineapple flavor</p>
+                    <button class="tryBttn">Try Now</button>
+                </div>
+                <div class="product">
+                    <img src="images/banana_Smoothie.png" loading="lazy" alt="Drink">
+                    <p>New Avocado flavor</p>
+                    <button class="tryBttn">Try Now</button>
+                </div>
+            </div>
+		</section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-card">
+                <div class="current-weather">
+                    <h2> Carlsbad  </h2>
+                    <div class="weather-details">
+                        <div class="weather-icon"></div>
+                        <div class="weather-summary">
+                            <p class="temperature"></p>
+                            <p class="description"></p>
+                            <p class="humidity"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <h3>3 Day Forecast</h3>
+                    <ul class="forecast-list">
+                        <li>
+                          <p class="forecast-day"></p>
+                          <p class="forecast-temperature"></p>
+                          <div class="forecast-icon"></div>
+                        </li>
+                        <li>
+                          <p class="forecast-day"></p>
+                          <p class="forecast-temperature"></p>
+                          <div class="forecast-icon"></div>
+                        </li>
+                        <li>
+                          <p class="forecast-day"></p>
+                          <p class="forecast-temperature"></p>
+                          <div class="forecast-icon"></div>
+                        </li>
+                      </ul>
+                </div>
+            </div>           
+        </section>
+        <!--info-->
+        <section class="info">
+            <h2>Hours & Locations</h2>
+            <div>
+                <ul>
+                    <li>Mon-Sat: 7am-7pm</li>
+                    <li>Sun: 8am-7pm</li>
+                    <li>Carlsbad, California</li>
+                </ul>
+            </div>
+		</section>
+    </main>
+    <footer>
+        <div class="infoTop">
+            <div>
+                <a href="index.html">
+                    <img src="images/logo.png" loading="lazy" alt="Bountiful Foods Icon">
+                </a>
+            </div>
+            <div>
+                <h2>Contact Us</h2>
+                <p>(760)555-0121</p>
+                <p>430 Carlsbad Village Dr, Carlsbad, CA 92008</p>
+            </div>
+            <section class="soc_media">
+                <a href="https://www.facebook.com/">
+                    <img src="images/facebook.png" loading="lazy" alt="facebook"></a>
+                <a href="https://www.linkedin.com/">
+                    <img src="images/Linkedin.png" loading="lazy" alt="linkedin"></a>
+                <a href="https://twitter.com/">
+                    <img src="images/twitter.png" loading="lazy" alt="Twitter"></a>
+            </section>
+        </div>
+        <section class="infoBottom">
+            <h4><span id="copyright"></span> Bountiful Foods | Ryan Overby | WDD 230 Project | <span id="lastModDate"></span></h4>
+        </section>
+    </footer>
+    <script src="scripts/main.js"></script> 
+    <script src="scripts/weather.js"></script>
+</body>
+</html>

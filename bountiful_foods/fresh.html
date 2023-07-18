@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home|Bountiful Foods</title>
+    <meta name="description" content="Bountiful Foods, a compact enterprise rooted in Carlsbad, California, specializes in providing organic and locally grown foods. While our physical location is in Carlsbad, our food truck fleet extends our reach along the California coast, serving the area from Los Angeles to San Diego. We source fruits and produce directly from local farmers, while also incorporating a range of products from national and international suppliers.">
+    <meta name="author" content="Ryan Overby">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////ADygfQAaVh0APIJpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMzAAAAADMiIiQzAAADMhEREUMwAANCESIhEjAAM0ISIiISQwA0QhIiIhJDADRCESIhEkMANEIREREiQwA0QhEiIRJDADNCEiIiEkMAA0IRIiEUMAADNBEREUMwAAAzQiIkMwAAAAAzMzMAAAAAAAAAAAAAD//wAA+B8AAOAHAADAAwAAwAMAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAMADAADAAwAA4AcAAPgfAAD//wAA" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <header>
+        <div class="headerLogo">
+            <a href="index.html"> 
+                <img src="images/logo4.png" alt="Bountiful Foods Logo">
+            </a>
+        </div>
+        <div class="hmbrgr">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="mainNav">
+            <ul>
+                <li><a href="index.html" class="navLink">Home</a></li>
+                <li><a href="fresh.html" class="navLink">Fresh</a></li>
+                <li><a href="about.html" class="navLink">About Us</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="boxImg">
+            <!-- 
+                <source media="(max-width: 600px)" srcset="#">
+                <source media="(min-width: 1000px)" srcset="#">
+            -->
+                <img src="images/juices.png" loading="lazy" alt="juices">
+        </div>
+        <form method="get" class="fresh-form">
+            <fieldset>
+                <h1>Drink Maker</h1>
+                <h2>Your Information</h2>
+                <label class="inputBox">
+                    <input type="text" name="fname" placeholder="First Name*" required class="first-name">
+                </label>
+                <label class="inputBox">
+                    <input type="email" name="email" placeholder="Email*" required class="email-address">
+                </label>
+                <label class="inputBox">
+                    <input type="tel" name="phone" placeholder="Phone Number*" required class="phone-number">
+                </label>
+                <h2>Fruit Selection</h2>
+                <p>Only one selection per option</p>
+                <label class="inputBox">
+                    <select name="subject" class="fruit-choice-1 fruitSelection">
+                        <option value="">Option 1</option>
+                    </select>
+                </label>
+                <label class="inputBox">
+                    <select name="subject" class="fruit-choice-2 fruitSelection">
+                        <option value="">Option 2</option>
+                    </select>
+                </label>
+                <label class="inputBox">
+                    <select name="subject" class="fruit-choice-3 fruitSelection">
+                        <option value="">Option 3</option>
+                    </select>
+                </label>
+                <h2>Special Instructions</h2>
+                <label>
+                    <textarea name="description" rows="4" cols="40" class="special-instructions" placeholder="Add a note (extra fruit, peanut butter, etc.)"></textarea>
+                </label>
+            </fieldset>
+            <input type="button" value="submit" class="submit-button">
+        </form>
+        <div class="form-info">
+        </div>        
+    </main>
+    <footer>
+        <div class="infoTop">
+            <div>
+                <a href="index.html">
+                    <img src="images/logo.png" loading="lazy" alt="Bountiful Foods Icon">
+                </a>
+            </div>
+            <div>
+                <h2>Contact Us</h2>
+                <p>(760)555-0121</p>
+                <p>430 Carlsbad Village Dr, Carlsbad, CA 92008</p>
+            </div>
+            <section class="soc_media">
+                <a href="https://www.facebook.com/">
+                    <img src="images/facebook.png" loading="lazy" alt="facebook"></a>
+                <a href="https://www.linkedin.com/">
+                    <img src="images/Linkedin.png" loading="lazy" alt="linkedin"></a>
+                <a href="https://twitter.com/">
+                    <img src="images/twitter.png" loading="lazy" alt="Twitter"></a>
+            </section>
+        </div>
+        <section class="infoBottom">
+            <h4><span id="copyright"></span> Bountiful Foods | Ryan Overby | WDD 230 Project | <span id="lastModDate"></span></h4>
+        </section>
+    </footer>
+    <script src="scripts/main.js"></script> 
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/formJuice.js"></script>
+    <script src="scripts/formData.js"></script>
+</body>
+</html>

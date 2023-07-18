@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Hammersmith+One&family=Montserrat:wght@300&family=Roboto&display=swap');
+
+:root {  
+    /* colors */
+    --primary: #14d3e0;
+    --secondary: #f2f2f2;
+    --accent1: #13cf48;
+    --accent2: #3e363f;
+    /*Font Colors*/
+    --heading-font: 'Hammersmith One', sans-serif;
+    --subttitle-font: 'DM Serif Display', serif;
+    --paragraph-font: 'Montserrat', sans-serif;
+    --clickable-font: 'Roboto', sans-serif;
+  
+    /*Background colors*/
+    --background-color-title: black;
+    --background-color: white;
+    
+    /*Font size*/
+    --headline: 2.8rem;
+    --subtitle: 1.8rem;
+    --nav: 2rem;
+    --paragraph: 1rem;
+    --clickable: .9rem;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: #000;
+    font-family: var(--paragraph-font);
+}
+
+/***************************************
+*************** Header *****************
+****************************************/
+header {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px;
+}
+
+header img {
+    padding: 10px;
+    max-width: 180px;
+    max-height: 180px;
+}
+
+.mainNav ul li a {
+    color: var(--secondary);
+}
+
+.mainNav ul li  {
+    padding: 25px 0;
+}
+
+.hmbrgr {
+    display: block;
+    cursor: pointer;
+    padding: 0 50px;
+}
+
+.line {
+    width: 40px;
+    height: 8px;
+    background: var(--accent1);
+    margin: 6px 0;
+    border-radius: 3px;
+    padding: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.hmbrgr:hover .line {
+    transition: all 0.2s ease-in-out;
+    background-color: var(--accent2);
+}
+
+.mainNav {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    background: var(--primary);
+    z-index: 2;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.mainNav ul {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    padding: 30px 0;
+    font-size: var(--nav);
+    font-family: var(--clickable-font);
+
+}
+
+.mainNav ul li a {
+    padding-bottom: 25px;
+}
+
+.mainNav ul li a:hover {
+    text-decoration: underline;
+    color: lime;
+}
+
+.mainNav.responsive {
+    opacity: 1;
+    transition: 0.3s;
+    height: auto;
+    z-index: 3;
+}
+
+.hmbrgr.responsive .line:nth-child(2)  {
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.hmbrgr.responsive .line:nth-child(3)  {
+    transition: 0.4s;
+    transform: translateY(-14px) rotate(-45deg);
+}
+.hmbrgr.responsive .line:nth-child(1)  {
+    transition: 0.4s;
+    transform: translateY(14px) rotate(45deg);
+}
+
+
+/***************************************
+**************** Main ******************
+****************************************/
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 1rem;
+
+}
+
+main h2 {
+    font-family: var(--subttitle-font);
+    font-size: var(--subtitle); 
+}
+
+.banner {
+   display: flex; 
+   flex-direction: column;
+   padding: 0;
+   margin: 0;
+}
+
+.boxImg img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.weather, 
+.specialty-drinks, 
+.info {
+    background-color:var(--secondary);
+    color: black;
+}
+.welcomeBox {
+    margin-top: -80px;
+    background-color: var(--background-color);
+    padding: 10px; /* Adjust this as needed */
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+.welcomeBox h1 {
+    font-family: var(--subttitle-font);
+    font-size: var(--subtitle);
+}
+
+.welcomeBox p {
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph); 
+}
+
+.weather h2, .specialty-drinks h2, .info h2 {
+    padding: 10px 25px;
+}
+
+.productBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 1rem;
+    
+}
+
+.product {
+    padding: 15px;
+    text-align: center;
+}
+
+.product img {
+    display: inline;
+    width:  120px;
+    height: 120px;
+    object-fit: cover;
+
+}
+
+.productBox div:nth-child(3), 
+.productBox div:nth-child(4){
+    display: none;
+}
+
+.tryBttn {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: var(--accent1);
+    border: none;
+    color: var(--secondary);
+    font-family: 'Roboto', sans-serif;
+}
+
+.tryBttn:hover {
+    background-color: var(--accent2);
+    transition: 0.5s;
+    color: var(--accent1);
+}
+
+
+/***************************************
+*************** Footer *****************
+****************************************/
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--primary);
+}
+
+footer div img {
+    padding: 10px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.soc_media a img {
+    display: inline;
+    margin: 10px;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.infoTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--secondary);
+    padding: 25px;
+}
+
+.infoBottom {
+    background-color: var(--accent1);
+    color: var(--secondary);
+    padding: 15px; 
+}
+
+/***************************************
+*************** weather ****************
+****************************************/
+
+
+.weather-card {
+    border: 10px solid var(--accent2);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+    width: auto;
+    color: var(--accent1);
+}
+
+.current-weather {
+    margin-bottom: 20px;
+
+}
+
+.weather-details {
+    text-align: center;
+    margin-top: 10px;
+    background-color: var(--accent2);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.forecast {
+
+    display: none;
+}
+
+.forecast p {
+    color: var(--accent1);
+}
+
+/***************************************
+************** Fresh Page ***************
+****************************************/
+/* Form container */
+.fresh-form {
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+/* Image container */
+.boxImg img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Fieldset and legend */
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+/* Headings */
+.fresh-form h2 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+/* Input boxes */
+.inputBox {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.inputBox input,
+.inputBox select,
+.inputBox textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.inputBox textarea {
+    resize: vertical;
+}
+
+/* Fruit Selection info */
+.fresh-form p {
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+/* Submit button */
+.submit-button {
+    background-color: var(--accent1);
+    color: #fff;
+    font-size: var(--clickable);
+    font-family: var(--clickable-font);
+    border: none;
+    border-radius: 20px;
+    padding: 12px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: var(--accent2);
+    color: var(--accent1);
+}
+
+/* Form info */
+.form-info {
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.form-info p {
+    font-size: var(--paragraph);
+    font-family: var(--paragraph-font);
+    padding-bottom: 20px;
+}
+
+.form-info button {
+    background-color: var(--accent1);
+    color: #fff;
+    font-size: var(--clickable);
+    font-family: var(--clickable-font);
+    border: none;
+    border-radius: 20px;
+    padding: 12px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.form-info button:hover {
+    background-color: var(--accent2);
+    color: var(--accent1);
+    }
+
+/***************************************
+************ About Us Page *************
+****************************************/
+.aboutInfo {
+    background-color: var(--secondary);
+    align-content: center;
+    justify-content: center;
+
+}
+.aboutInfo h1 {
+    font-size: var(--headline);
+    font-family: var(--heading-font);
+    padding: 0 40px;
+
+}
+
+.aboutInfo p {
+    font-size: 1.0rem;
+    font-family: var(--clickable-font);
+    padding: 0 40px 0 40px;
+    line-height: 2.4;
+}
+
+.infoBox {
+    padding: 40px;
+}
+
+.infoBox p {
+    line-height: 1.8;
+    font-size: var(--paragraph);
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
