@@ -72,7 +72,7 @@ header img {
 .line {
     width: 40px;
     height: 8px;
-    background: var(--accent1);
+    background: var(--secondary);
     margin: 6px 0;
     border-radius: 3px;
     padding: 0;
@@ -81,7 +81,7 @@ header img {
 
 .hmbrgr:hover .line {
     transition: all 0.2s ease-in-out;
-    background-color: var(--accent2);
+    background-color: var(--secondary);
 }
 
 .mainNav {
